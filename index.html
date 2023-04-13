@@ -30,13 +30,13 @@
     <div id="app">
 
       <div class="slider">
-        <button @click="counter--"> <i class="fa-solid fa-arrow-left" class="prev"></i> </button>
+        <button @click="arrow(false)"> <i class="fa-solid fa-arrow-left"></i> </button>
 
         <div class="box">
-          <img :src="image[counter]" :alt=''>
+          <img :src="images[counter]">
         </div>
         
-        <button @click="counter++"> <i class="fa-solid fa-arrow-right" class="next"></i> </button>
+        <button @click="arrow(true)"> <i class="fa-solid fa-arrow-right"></i> </button>
       </div>
 
     </div>
