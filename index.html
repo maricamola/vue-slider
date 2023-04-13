@@ -43,10 +43,7 @@
 
       <div class="thumb">
         <div class="minibox" >
-          <span class="image"><img :src="image[counter]"></span>
-          <span class="image"><img :src="image[counter]"></span>
-          <span class="image"><img :src="image[counter]"></span>
-          <span class="image"><img :src="image[counter]"></span>
+          <img v-for = '(image, index) in images' :src="image" alt="" class="image" @click="counter = index">
         </div>
       </div>
 
