@@ -5,11 +5,19 @@ createApp({
 
   data(){
     return{
-      image:{
-        src: 'img/foto1.jpg',
-        alt: 'Vista suite',
-      }
+      
+      images:[
+        'img/foto1.jpg',
+        'img/foto2.jpg',
+        'img/foto3.jpg',
+        'img/foto4.jpg'
+      ],
+      counter:0
     }
+  },
+
+  methods:{
   }
+
 
 }).mount('#app')
